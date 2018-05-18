@@ -1,0 +1,79 @@
+@model csharpbeltexam.Models.Wrapper
+<hr>
+<a href="/logout">Logout</a></p>
+
+<h1>Hello, @ViewBag.User.FirstName!</h1>
+
+<form action="/add_bright_idea" method="POST">
+
+    <label for="Idea">Idea</label>
+    <textarea type="text" name="Idea" placeholder="Enter an idea"></textarea><br>
+
+    @{
+        if(TempData["IdeaError"] != null){
+                <small id="ideaerror" class="error-message form-text text-muted">@TempData["IdeaError"]</small>
+        }
+    }
+
+    <input type="submit" value="Idea!">
+</form>
+
+<table class="table table-responsive">
+    <!-- <thead>
+        <tr>
+            <th>Author</th>
+            <th>Idea</th>
+            <th>Likes</th>
+            <th>Action</th>
+        </tr>
+    </thead> -->
+    <tbody>
+
+
+@{
+    foreach(var bright_idea in ViewBag.BrightIdeas)
+    {
+        
+        <tr>
+            <td><a href="/users/@bright_idea.User.UserId"> @bright_idea.User.FirstName </a> says: @bright_idea.Idea</td>
+            <tr>
+            
+                @{
+                    bool attending = false;
+                
+                    if(@bright_idea.CreatorId == @ViewBag.User.UserId)
+                    {
+                        <td><a href="/bright_ideas/@bright_idea.Id/delete">Delete</a></td>
+                    }
+                    else
+                    {
+                        foreach(var guest in @bright_idea.Guests)
+                        {
+                            if(@guest.UserId == @ViewBag.User.UserId)
+                            {
+                                attending = true;
+                                
+                            }
+                        }
+                        if(attending == true){
+                            <td><a href="/bright_ideas/@bright_idea.Id/unlike">Un-Like</a></td>
+                        }
+                        else{
+                            <td><a href="/bright_ideas/@bright_idea.Id/like">Like</a></td>  
+                        }
+                    }
+                }
+                <td><a href="/bright_ideas/@bright_idea.Id">@bright_idea.Guests.Count People Like This</a></td>
+                
+            </tr>
+
+
+        </tr>
+    }
+}
+        
+ 
+
+
+    </tbody>
+</table>

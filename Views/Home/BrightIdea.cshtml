@@ -1,0 +1,36 @@
+
+
+<p><a href="/dashboard">Bright Ideas</a> | <a href="/logout">Logout</a></p>
+<h1>@ViewBag.BrightIdea.User.FirstName Says: @ViewBag.BrightIdea.Idea </h1>
+
+
+
+
+<h4>People who like this post:</h4>
+@if(ViewBag.Guests != null)
+{
+    <table class="table table-responsive">
+    <thead>
+        <tr>
+            <th>Alias</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    @{
+        foreach(var guest in ViewBag.Guests)
+        {
+            <tr>
+                <td><a href="/users/@guest.User.UserId">   @guest.User.Alias </a></td>
+                <td>@guest.User.FirstName</td>
+            </tr>
+        }
+    }
+            
+    
+
+
+        </tbody>
+    </table>
+}

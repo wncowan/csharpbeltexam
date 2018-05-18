@@ -1,0 +1,11 @@
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/csharpbeltexam/bin/Debug/netcoreapp2.0/csharpbeltexam.deps.json
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/csharpbeltexam/bin/Debug/netcoreapp2.0/csharpbeltexam.runtimeconfig.json
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/csharpbeltexam/bin/Debug/netcoreapp2.0/csharpbeltexam.runtimeconfig.dev.json
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/csharpbeltexam/bin/Debug/netcoreapp2.0/csharpbeltexam.dll
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/csharpbeltexam/bin/Debug/netcoreapp2.0/csharpbeltexam.pdb
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/csharpbeltexam/obj/Debug/netcoreapp2.0/csharpbeltexam.csprojResolveAssemblyReference.cache
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/csharpbeltexam/obj/Debug/netcoreapp2.0/csharpbeltexam.csproj.CoreCompileInputs.cache
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/csharpbeltexam/obj/Debug/netcoreapp2.0/csharpbeltexam.AssemblyInfoInputs.cache
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/csharpbeltexam/obj/Debug/netcoreapp2.0/csharpbeltexam.AssemblyInfo.cs
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/csharpbeltexam/obj/Debug/netcoreapp2.0/csharpbeltexam.dll
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/csharpbeltexam/obj/Debug/netcoreapp2.0/csharpbeltexam.pdb
